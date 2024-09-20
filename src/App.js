@@ -1,6 +1,6 @@
 import "./App.css";
-// import Q1 from "./questions/q1/Q1";
-// import Q2 from "./questions/q2/Q2";
+import Q1 from "./questions/q1/Q1";
+import Q2 from "./questions/q2/Q2";
 import Q3 from "./questions/q3/Q3";
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
     //   </main>
     // </div>
     // <Q1 />
+    // <Q2 />
     <Q3 />
   );
 }

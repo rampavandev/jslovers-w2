@@ -4,6 +4,7 @@ const SuggestionsList = ({
   suggestions = [],
   highlight,
   dataKey,
+  activeSuggestionIndex,
   onSuggestionClick,
 }) => {
   const getHighlightedText = (text, highlight) => {
@@ -28,7 +29,13 @@ const SuggestionsList = ({
           <li
             key={index}
             onClick={() => onSuggestionClick(suggestion)}
-            className="suggestion-item"
+            className={`suggestion-item ${
+              index === activeSuggestionIndex ? "active" : ""
+            }`}
+            style={{
+              backgroundColor:
+                index === activeSuggestionIndex ? "#f1f1f1" : "transparent",
+            }}
           >
             {getHighlightedText(currentSuggestion, highlight)}
           </li>

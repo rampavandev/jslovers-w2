@@ -6,7 +6,6 @@ const SearchUi = () => {
   const staticData = ["Pasta", "Pizza", "Burger", "Sandwich", "Salad"];
 
   const fetchSuggestions = async (query) => {
-    debugger;
     const response = await fetch(
       `https://dummyjson.com/recipes/search?q=${query}`
     );
@@ -29,9 +28,8 @@ const SearchUi = () => {
         customLoader={<div>Loading...</div>}
         onSelect={(selected) => console.log(selected)}
         onChange={(searchText) => console.log(searchText)}
-        onBlur={() => console.log("onBlur")}
-        onFocus={() => console.log("onFocus")}
         customStyles={{}}
+        cachingEnabled={true}
       />
     </div>
   );
