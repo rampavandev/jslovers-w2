@@ -135,7 +135,7 @@ const Autocomplete = ({
       />
 
       {(suggestions.length > 0 || loading || error) && (
-        <ul ref={suggestionListRef}>
+        <ul ref={suggestionListRef}  className="suggestions">
           {error && <div className="error">{error}</div>}
           {loading && <div className="loader">{customLoader}</div>}
           <Suggestions
