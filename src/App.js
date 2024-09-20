@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Q1 from "./questions/q1/Q1";
+// import Q2 from "./questions/q2/Q2";
+import Q3 from "./questions/q3/Q3";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="welcome-container">
+    //   <header className="welcome-header">
+    //     <h1>Welcome to JS Lovers Workshop!</h1>
+    //   </header>
+    //   <main className="welcome-content">
+    //     <p>
+    //       Get ready to dive into JavaScript and React with hands-on sessions,
+    //       interactive coding, and amazing learning experiences.
+    //     </p>
+    //     <button
+    //       className="cta-button"
+    //       onClick={() => alert("Excited to have you with us!")}
+    //     >
+    //       Join the Fun!
+    //     </button>
+    //   </main>
+    // </div>
+    // <Q1 />
+    <Q3 />
   );
 }
 

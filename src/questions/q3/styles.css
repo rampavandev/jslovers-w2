@@ -1,0 +1,83 @@
+/* styles.css */
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.suggestion-container {
+  position: relative; /* Ensures ul is aligned with the input */
+  width: 100%; /* Makes sure the container takes up the full width */
+  max-width: 600px; /* Optional: Ensures max width like the input */
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 100%; /* Full width of the parent container */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0; /* Rounded at top only */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #5cb85c;
+}
+
+ul {
+  position: absolute;
+  width: 100%; /* Matches input width */
+  list-style-type: none;
+  padding: 0 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-top: none; /* Connect dropdown to input */
+  border-radius: 0 0 5px 5px; /* Rounded at bottom only */
+  background-color: white;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+.suggestion-item {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.loader {
+  font-size: 14px;
+  padding: 10px;
+  color: #777;
+  text-align: center;
+}
