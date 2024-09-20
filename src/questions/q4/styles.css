@@ -1,0 +1,74 @@
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-title {
+  background-color: #f5f5f5;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.accordion-title:hover {
+  background-color: #ebebeb;
+}
+
+.accordion-title:focus {
+  background-color: #e0e0e0;
+}
+
+.accordion-content {
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 16px;
+}
+
+.accordion-content.open {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.accordion-item.active .accordion-title {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.accordion-title span {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-title span {
+  transform: rotate(0deg);
+}
