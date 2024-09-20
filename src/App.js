@@ -4,6 +4,7 @@ import Q2 from "./questions/q2/Q2";
 import Q3 from "./questions/q3/Q3";
 import Q4 from "./questions/q4/Q4";
 import Q5 from "./questions/q5/Q5";
+import Q6 from "./questions/q6/Q6";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
     // <Q2 />
     // <Q3 />
     // <Q4 />
-    <Q5 />
+    // <Q5 />
+    <Q6 />
   );
 }
 

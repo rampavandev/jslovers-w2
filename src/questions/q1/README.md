@@ -26,9 +26,3 @@ Create a "Bucket List" application using React that allows users to manage their
 3. Users can click the "Edit" button to modify an existing item's text, and the changes are saved when the user presses Enter or clicks outside the input field.
 4. Users can delete items from the list by clicking the "Delete" button.
 5. The bucket list data is saved in the browser's `localStorage` so that the list persists when the page is refreshed.
-
-
-
-
-
-### Problem Statement: Bucket List Application
