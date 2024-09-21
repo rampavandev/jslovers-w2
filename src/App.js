@@ -5,7 +5,8 @@ import "./App.css";
 // import Q4 from "./questions/q4/Q4";
 // import Q5 from "./questions/q5/Q5";
 // import Q6 from "./questions/q6/Q6";
-import Q7 from "./questions/q7/Q7";
+// import Q7 from "./questions/q7/Q7";
+import Q8 from "./questions/q8/Q8";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
     // <Q4 />
     // <Q5 />
     // <Q6 />
-    <Q7 />
+    // <Q7 />
+    <Q8 />
   );
 }
 
